@@ -40,8 +40,17 @@ class Patient:
         return f"ID: {self.patient_id}, Name: {self.name}, Age: {self.age}, Condition: {self.condition}"
 
     # Searching for a patient
-    print("\nSearching for 'Jane Smith':")
-    tracker.search_patient("Jane Smith")
+    print("\nSearching for 'Ali Ahmed':")
+    tracker.search_patient("Ali Ahmed")
 
-    print("\nSearching for 'Alice Johnson':")
-    tracker.search_patient("Alice Johnson")
+    print("\nSearching for 'Sarah Mohammed':")
+    tracker.search_patient("Sarah Mohammed")
+# patient_tracker.py
+       
+    # Updating a patient
+    print("\nUpdating patient with ID 1:")
+    tracker.update_patient(1, name="Johnathan Doe", age=31, condition="Recovered")
+
+    # Viewing patients after update
+    print("\nList of patients after update:")
+    tracker.view_patients()
